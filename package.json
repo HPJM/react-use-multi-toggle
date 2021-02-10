@@ -33,7 +33,7 @@
   "files": [
     "dist"
   ],
-  "homepage": "https://github.com/HPJM/use-multi-toggle",
+  "homepage": "https://github.com/HPJM/react-use-multi-toggle",
   "keywords": [
     "hooks",
     "react"
