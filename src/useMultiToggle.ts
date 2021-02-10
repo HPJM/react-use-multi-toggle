@@ -2,7 +2,7 @@ import { useState } from "react";
 
 type OneOrMany<T> = T | T[];
 
-interface Actions<T> {
+export interface MultiToggleActions<T> {
   has: (value: OneOrMany<T>) => boolean;
   hasSome: (value: T[]) => boolean;
   hasAll: (value: T[]) => boolean;
@@ -35,7 +35,7 @@ const hasSome = <T>(values: T[], list: T[]): boolean =>
 const hasAll = <T>(values: T[], list: T[]): boolean =>
   list.every((val) => values.includes(val));
 
-export const useMultiToggle = <T>(initial: T[] = []): Actions<T> => {
+export const useMultiToggle = <T>(initial: T[] = []): MultiToggleActions<T> => {
   const [values, setValues] = useState<T[]>(initial);
 
   return {
