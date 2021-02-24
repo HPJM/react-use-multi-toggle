@@ -37,7 +37,7 @@ const YourComponent = () => {
 
 ## Reference
 
-```ts
+```js
 const {
   toggle,
   add,
